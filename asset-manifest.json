@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c389bcd4.css",
+    "main.js": "/static/js/main.50170035.js",
+    "static/js/453.e50bb4e6.chunk.js": "/static/js/453.e50bb4e6.chunk.js",
+    "static/media/Rubik-Regular.ttf": "/static/media/Rubik-Regular.0f56ab0b295fd9fca620.ttf",
+    "static/media/Rubik-Medium.ttf": "/static/media/Rubik-Medium.c9459b0b7c4e69f6716b.ttf",
+    "static/media/Rubik-Bold.ttf": "/static/media/Rubik-Bold.d62658f24eb7c7dc739e.ttf",
+    "static/media/Rubik-Black.ttf": "/static/media/Rubik-Black.cd53051b6608d8737fa2.ttf",
+    "static/media/stonefishai.gif": "/static/media/stonefishai.19542c6e3e579fd71084.gif",
+    "static/media/NeogroteskEss-Black.otf": "/static/media/NeogroteskEss-Black.59037675a0763c60e329.otf",
+    "static/media/NeogroteskEss-RegularIt.otf": "/static/media/NeogroteskEss-RegularIt.9c0a206464f0a1e18bc2.otf",
+    "static/media/NeogroteskEss-LightIt.otf": "/static/media/NeogroteskEss-LightIt.e438f7a41bf7dbfa1531.otf",
+    "static/media/NeogroteskEss-Regular.otf": "/static/media/NeogroteskEss-Regular.566787e7507822eaccaf.otf",
+    "static/media/NeogroteskEss-UltLight.otf": "/static/media/NeogroteskEss-UltLight.7d6462659a940e50e998.otf",
+    "static/media/NeogroteskEss-Light.otf": "/static/media/NeogroteskEss-Light.d5d576fab594ad68f6d0.otf",
+    "static/media/NeogroteskEss-Bold.otf": "/static/media/NeogroteskEss-Bold.b455d4317e4af782bf27.otf",
+    "static/media/twitter.png": "/static/media/twitter.8f952bfe9a7962e1019f.png",
+    "static/media/telegram.png": "/static/media/telegram.acd260c2b36329b5c816.png",
+    "index.html": "/index.html",
+    "main.c389bcd4.css.map": "/static/css/main.c389bcd4.css.map",
+    "main.50170035.js.map": "/static/js/main.50170035.js.map",
+    "453.e50bb4e6.chunk.js.map": "/static/js/453.e50bb4e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c389bcd4.css",
+    "static/js/main.50170035.js"
+  ]
+}
