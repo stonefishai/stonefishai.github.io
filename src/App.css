@@ -78,8 +78,18 @@
 .rubik-regular {
   font-family: Rubik-Regular, serif;
 }
+@font-face {
+  font-family: Friem-Regular;
+  src: url("./fonts/Friem/friem-regular.otf");
+}
+.friem-regular {
+  font-family: Friem-Regular, serif;
+}
 .changa-one {
   font-family: "Changa One", serif;
+}
+.montserrat {
+  font-family: "Montserrat", serif;
 }
 .background-image-cover {
   background-size: cover;
@@ -97,6 +107,9 @@
 .text-color-1 {
   color: #333333!important;
 }
+.text-color-2 {
+  color: #18A0FB!important;
+}
 .link-color-1 {
   color:#071828;
   text-decoration: none;
@@ -106,6 +119,15 @@
 }
 .bg-color-1 {
   background-color: #172a4a;
+}
+.bg-color-2 {
+  background-color: #A9D6F5;
+}
+.bg-color-3 {
+  background-color: #18A0FB!important;
+}
+.bg-color-4 {
+  background-color: #DDFF31!important;
 }
 .btn-custom-1 {
   background-color: #6a81a1;
@@ -126,6 +148,40 @@
   background-color: #6a81a1;
   color: #ffffff;
   border:2px solid #6a81a1;
+}
+.btn-custom-3 {
+  background-color: #ffffff;
+  color: #000000;
+  border:3px solid #000000;
+  border-radius:100px;
+  box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
+}
+.btn-custom-3:hover, .btn-custom-3:focus, .btn-custom-3:active {
+  background-color: #ffffff;
+  color: #000000;
+  border:3px solid #000000;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  margin-top:5px;
+  margin-bottom:-5px;
+}
+.text-shadow-1 {
+  text-shadow: -1px 11px 0px rgba(0,0,0,1);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #000000;
+}
+.text-shadow-2 {
+  text-shadow: -1px 7px 0px rgba(0,0,0,0.3);
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #000000;
+}
+.box-shadow-1 {
+  box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.4);
 }
 .border-radius-0 {
   border-radius: 0;
