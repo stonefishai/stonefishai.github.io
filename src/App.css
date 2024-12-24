@@ -129,6 +129,9 @@
 .bg-color-4 {
   background-color: #DDFF31!important;
 }
+.bg-color-5 {
+  background-color: #1877fb!important;
+}
 .btn-custom-1 {
   background-color: #6a81a1;
   color: #ffffff;
@@ -167,16 +170,6 @@
   -moz-box-shadow: none;
   margin-top:5px;
   margin-bottom:-5px;
-}
-.text-shadow-1 {
-  text-shadow: -1px 11px 0px rgba(0,0,0,1);
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #000000;
-}
-.text-shadow-2 {
-  text-shadow: -1px 7px 0px rgba(0,0,0,0.3);
-  -webkit-text-stroke-width: 2.5px;
-  -webkit-text-stroke-color: #000000;
 }
 .box-shadow-1 {
   box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.4);
@@ -700,28 +693,83 @@ body {
 }
 
 /* phones */
+.text-shadow-1 {
+  text-shadow: -1px 6px 0px rgba(0,0,0,1);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #000000;
+}
+.text-shadow-2 {
+  text-shadow: -1px 5px 0px rgba(0,0,0,0.3);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
+}
+.text-shadow-3 {
+  text-shadow: -1px 3px 0px rgba(0,0,0,1);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+}
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
+  .text-shadow-1 {
+    text-shadow: -1px 7px 0px rgba(0,0,0,1);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000000;
+  }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
+  .text-shadow-1 {
+    text-shadow: -1px 8px 0px rgba(0,0,0,1);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000000;
+  }
 }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+  .text-shadow-1 {
+    text-shadow: -1px 8px 0px rgba(0,0,0,1);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000000;
+  }
+  .text-shadow-2 {
+    text-shadow: -1px 5px 0px rgba(0,0,0,0.3);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+  }
 }
 
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+  .text-shadow-1 {
+    text-shadow: -1px 9px 0px rgba(0,0,0,1);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000000;
+  }
+  .text-shadow-3 {
+    text-shadow: -1px 4px 0px rgba(0,0,0,1);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+  }
 }
 
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-
+  .text-shadow-1 {
+    text-shadow: -1px 11px 0px rgba(0,0,0,1);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000000;
+  }
+  .text-shadow-2 {
+    text-shadow: -1px 6px 0px rgba(0,0,0,0.3);
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: #000000;
+  }
+  .text-shadow-3 {
+    text-shadow: -1px 5px 0px rgba(0,0,0,1);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+  }
 }

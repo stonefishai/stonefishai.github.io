@@ -8,6 +8,12 @@ import social4 from '../../img/socials/social-4.webp';
 import social5 from '../../img/socials/social-5.webp';
 import social6 from '../../img/socials/social-6.webp';
 import stonefishai2 from '../../img/stonefishai-2.gif';
+import burn from '../../img/burn.webp';
+import wave from '../../img/wave.webp';
+import wave2 from '../../img/wave2.webp';
+import candle from '../../img/candle.webp';
+import stonefishaiLeft from '../../img/stonefishai-left.webp';
+import stonefishaiRight from '../../img/stonefishai-right.webp';
 
 import telegram from '../../img/telegram.png';
 import twitter from '../../img/twitter.png';
@@ -17,44 +23,74 @@ function Home(props) {
     return (
         <div>
             {/* Hero Section */}
-            <div className="home bg-white background-image-cover tw-bg-[80%_0px] sm:tw-bg-[90%_0px] md:tw-bg-[50%_0px] lg:tw-bg-[center] xl:tw-bg-[0_0px]" style={{backgroundImage:"url('" + bg1 + "')"}}>
+            <div
+                className="home bg-white background-image-cover tw-bg-[80%_0px] sm:tw-bg-[90%_0px] md:tw-bg-[50%_0px] lg:tw-bg-[center] xl:tw-bg-[0_0px]"
+                style={{backgroundImage: "url('" + bg1 + "')"}}>
                 <div className="container position-relative">
                     <div className="position-absolute tw-top-[25px] tw-left-0 w-100 px-2 px-sm-0">
-                        <div className="bg-color-2 px-4 py-2 tw-border-[3px] tw-border-[#000000] tw-border-solid tw-rounded-[20px] box-shadow-1">
+                        <div
+                            className="bg-color-2 px-4 py-2 tw-border-[3px] tw-border-[#000000] tw-border-solid tw-rounded-[20px] box-shadow-1">
                             <div className="d-flex justify-content-between">
                                 <div className="d-flex align-items-center">
                                     <div>
-                                        <img src={logo} className="tw-w-[50px] lg:tw-w-[55px] xl:tw-w-[60px] xxl:tw-w-[65px]" alt="Stone Fish AI"/>
+                                        <img src={logo}
+                                             className="tw-w-[50px] lg:tw-w-[55px] xl:tw-w-[60px] xxl:tw-w-[65px]"
+                                             alt="Stone Fish AI"/>
                                     </div>
                                     <div className="ps-3">
                                         <p className="friem-regular font-size-170 font-size-md-180 font-size-lg-200 font-size-xl-220 font-size-xxl-230 text-center text-black mb-0">$SAI</p>
                                     </div>
 
                                     <div className="d-none d-lg-block ps-5">
-                                        <p className="friem-regular font-size-100 text-center text-black mb-0">Tokenomics</p>
+                                        <a href="#tokenomics" className="text-decoration-none">
+                                            <p className="friem-regular font-size-100 text-center text-black mb-0">Tokenomics</p>
+                                        </a>
                                     </div>
                                     <div className="d-none d-lg-block ps-3 ps-xl-4">
-                                        <p className="friem-regular font-size-100 text-center text-black mb-0">Community</p>
+                                        <a href="https://t.me/stonefishAI" target="_blank" rel="noreferrer" className="text-decoration-none">
+                                            <p className="friem-regular font-size-100 text-center text-black mb-0">Community</p>
+                                        </a>
                                     </div>
                                     <div className="d-none d-lg-block ps-3 ps-xl-4">
-                                        <p className="friem-regular font-size-100 text-center text-black mb-0">Meme Library</p>
+                                        <a href="#meme-library" className="text-decoration-none">
+                                            <p className="friem-regular font-size-100 text-center text-black mb-0">Meme
+                                                Library</p>
+                                        </a>
                                     </div>
                                 </div>
 
                                 <div className="d-flex align-items-center tw-mt-[-8px]">
                                     <div className="d-none d-sm-block">
-                                        <button
+                                        <a href="https://dexscreener.com/sui/0x7c7ffaedb6d8a31618565f74638a9017b24cd74e1affb5ceca2640e02972c8ce" target="_blank" rel="noreferrer"
                                             className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] xl:tw-w-[136px] text-color-2">Chart
-                                        </button>
+                                        </a>
                                     </div>
                                     <div className="d-none d-sm-block ps-2 pe-2">
-                                        <button
+                                        <a href="https://app.turbos.finance/#/trade?input=0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI&output=0x2::sui::SUI" target="_blank" rel="noreferrer"
                                             className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] text-white bg-color-3">Buy
-                                        </button>
+                                        </a>
                                     </div>
 
-                                    <div className="ps-4 tw-mt-[8px]">
-                                        <i className="fa-light fa-bars font-size-200 font-size-xl-240 cursor-pointer"></i>
+                                    <div className="d-block d-lg-none ps-4 tw-mt-[8px]">
+                                        <div className="dropdown">
+                                            <i className="fa-light fa-bars font-size-200 font-size-xl-240 cursor-pointer" data-bs-toggle="dropdown"></i>
+
+                                            <ul className="dropdown-menu bg-color-2 tw-border-[2px] tw-border-[#000000] tw-border-solid tw-rounded-[10px]">
+                                                <li><a href="#tokenomics" className="text-decoration-none friem-regular dropdown-item">Tokenomics</a></li>
+                                                <li><a href="https://t.me/stonefishAI" className="friem-regular dropdown-item" target="_blank" rel="noreferrer">Community</a></li>
+                                                <li><a href="#meme-library" className="friem-regular dropdown-item">Meme Library</a></li>
+                                                <li className="d-block d-sm-none px-3 mt-2 mb-2">
+                                                    <a href="https://dexscreener.com/sui/0x7c7ffaedb6d8a31618565f74638a9017b24cd74e1affb5ceca2640e02972c8ce" target="_blank" rel="noreferrer"
+                                                        className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] xl:tw-w-[136px] text-color-2">Chart
+                                                    </a>
+                                                </li>
+                                                <li className="d-block d-sm-none px-3 mb-2">
+                                                    <a href="https://app.turbos.finance/#/trade?input=0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI&output=0x2::sui::SUI" target="_blank" rel="noreferrer"
+                                                        className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] text-white bg-color-3">Buy
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -62,26 +98,32 @@ function Home(props) {
                     </div>
 
                     <div className="row align-items-center min-vh-100 py-5">
-                    <div className="col-lg-7 mt-4 mt-sm-5 pt-5">
-                            <h1 className="friem-regular text-shadow-1 font-size-360 font-size-sm-420 font-size-md-450 font-size-xl-520 font-size-xxl-550 text-center text-white line-height-120 line-height-sm-100 tw-tracking-[-0.04em] mb-5">Welcome to<br/> STONEFISH AI!</h1>
-                            <h2 className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-5">Venomous Ai Agent on SUI Network</h2>
+                        <div className="col-lg-7 mt-4 mt-sm-5 pt-5">
+                            <h1 className="friem-regular text-shadow-1 font-size-360 font-size-sm-420 font-size-md-450 font-size-xl-520 font-size-xxl-550 text-center text-white line-height-120 line-height-sm-100 tw-tracking-[-0.04em] mb-5">Welcome
+                                to<br/> STONEFISH AI!</h1>
+                            <h2 className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-5">Venomous
+                                Ai Agent on SUI Network</h2>
 
                             <div className="text-center">
-                                <button className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 pt-[1px] pb-[1px] px-5">Join $SAI Community</button>
+                                <a href="https://t.me/stonefishAI" target="_blank" rel="noreferrer"
+                                    className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 pt-[1px] pb-[1px] px-5">Join
+                                    $SAI Community
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Hero Section */}
-            <div className="bg-color-3">
+            {/* About Section */}
+            <div className="bg-color-3 pb-5">
                 <div className="container">
                     <div
                         className="bg-color-4 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] px-4 py-3">
                         <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
                             <div className="d-flex flex-column flex-lg-row align-items-lg-center mb-2 mb-md-0">
-                                <div className="d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-lg-0">
+                                <div
+                                    className="d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-lg-0">
                                     <div>
                                         <i className="fa-solid fa-copy font-size-130 font-size-lg-150"></i>
                                     </div>
@@ -112,31 +154,284 @@ function Home(props) {
                                     <img src={social5} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
                                 </div>
                                 <div className="px-1">
-                                    <img src={social6} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    <a href="https://www.coingecko.com/en/coins/stonefish-ai" target="_blank" rel="noreferrer">
+                                        <img src={social6} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="bg-white tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] px-4 py-3">
+                    <div
+                        className="bg-white tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] box-shadow-1 px-4 py-3">
                         <div className="row align-items-center">
                             <div className="col-md-6">
                                 <div className="px-sm-5 px-md-2 px-lg-4">
-                                    <img src={stonefishai2} className="w-100 tw-mt-[-20px] sm:tw-mt-[-30px] md:tw-mt-[0] xl:tw-mt-[-50px] xxl:tw-mt-[-70px] xl:tw-mb-[-20px] xxl:tw-mb-[-40px]" alt=""/>
+                                    <img src={stonefishai2}
+                                         className="w-100 tw-mt-[-20px] sm:tw-mt-[-30px] md:tw-mt-[0] xl:tw-mt-[-50px] xxl:tw-mt-[-70px] xl:tw-mb-[-20px] xxl:tw-mb-[-40px]"
+                                         alt=""/>
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="pt-md-3 pt-lg-0 pe-md-4 pe-lg-5 mb-4 mb-md-0">
                                     <div className="pe-lg-4">
-                                        <p className="text-center friem-regular text-black font-size-180 font-size-lg-240 font-size-xl-250 font-size-xxl-260">About $SAI</p>
-                                        <p className="text-center montserrat text-black font-size-110 font-size-md-100 font-size-lg-120 font-size-xl-130 font-size-xxl-140 font-weight-500">SAI, the Stonefish AI, is the most cunning and resilient creature in the Sui Ocean, embodying the unyielding spirit of innovation.</p>
-                                        <p className="text-center montserrat text-black font-size-110 font-size-md-100 font-size-lg-120 font-size-xl-130 font-size-xxl-140 font-weight-500">Rising from the depths of decentralized intelligence, SAI fuses the chaotic brilliance of meme culture with cutting-edge AI technology, creating a project unlike any other in the crypto space.</p>
+                                        <p className="text-center friem-regular text-black font-size-180 font-size-lg-240 font-size-xl-250 font-size-xxl-260">About
+                                            $SAI</p>
+                                        <p className="text-center montserrat text-black font-size-110 font-size-md-100 font-size-lg-120 font-size-xl-130 font-size-xxl-140 font-weight-500">SAI,
+                                            the Stonefish AI, is the most cunning and resilient creature in the Sui
+                                            Ocean, embodying the unyielding spirit of innovation.</p>
+                                        <p className="text-center montserrat text-black font-size-110 font-size-md-100 font-size-lg-120 font-size-xl-130 font-size-xxl-140 font-weight-500">Rising
+                                            from the depths of decentralized intelligence, SAI fuses the chaotic
+                                            brilliance of meme culture with cutting-edge AI technology, creating a
+                                            project unlike any other in the crypto space.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* Burning Milestone */}
+            <div className="bg-color-3 pt-5">
+                <div className="container">
+                    <p className="friem-regular text-shadow-1 text-center text-md-start font-size-260 font-size-sm-280 font-size-md-280 font-size-lg-330 font-size-xl-380 font-size-xxl-420 text-start text-white line-height-120 line-height-sm-100 tw-tracking-[-0.04em] mb-5">$SAI
+                        BURNING MILESTONE</p>
+
+                    <div className="row align-items-center">
+                        <div className="order-1 order-lg-0 col-lg-6">
+                            <div
+                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
+                                <div className="p-2">
+                                    <p className="montserrat text-black font-size-lg-110 font-size-xl-130 font-weight-700">$SAI
+                                        Burned to
+                                        Ashes - *insert date*</p>
+                                    <p className="montserrat text-black font-size-90 font-size-lg-100 line-height-150 mb-0">Nemo
+                                        enim
+                                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro quisquam est, qui dolorem. **Add tx link and milestone</p>
+                                </div>
+                            </div>
+
+                            <div
+                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4">
+                                <div className="p-2">
+                                    <p className="montserrat text-black font-size-110 font-size-xl-130 font-weight-700">$SAI
+                                        Burned to
+                                        Ashes - *insert date*</p>
+                                    <p className="montserrat text-black font-size-90 font-size-lg-100 line-height-150 mb-0">Nemo
+                                        enim
+                                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                                        porro quisquam est, qui dolorem. **Add tx link and milestone</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0">
+                            <div
+                                className="row justify-content-center justify-content-lg-end justify-content-xl-center">
+                                <div className="col-11 col-sm-9 col-md-7 col-lg-11 col-xl-10 col-xxl-9">
+                                    <img src={burn} className="w-100" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="tw-mt-[100px]">
+                    <img src={wave} className="w-100" alt=""/>
+                </div>
+            </div>
+
+            {/* Community Spotlight */}
+            <div
+                className="bg-color-5 py-5 position-relative tw-mt-[-10px] sm:tw-mt-[-20px] md:tw-mt-[-50px] md:tw-mb-[-50px]" id="meme-library">
+                <div
+                    className="bg-color-5 position-absolute tw-bottom-[-10px] tw-left-[0] w-100 tw-h-[50px] tw-z-[-1]"></div>
+
+                <div className="container">
+                    <div className="d-flex justify-content-between align-items-center mb-5 pb-md-4 pb-lg-5">
+                        <div className="d-none d-md-block">
+                            <img src={stonefishaiLeft}
+                                 className="md:tw-w-[100px] lg:tw-w-[180px] xl:tw-w-[220px] xxl:tw-w-[220px]" alt=""/>
+                        </div>
+                        <div className="lg:tw-px-[20px] xl:tw-px-[80px] xxl:tw-px-[100px]">
+                            <p className="friem-regular text-shadow-1 text-center font-size-300 font-size-sm-290 font-size-md-280 font-size-lg-260 font-size-xl-280 font-size-xxl-340 text-start text-white line-height-120 line-height-sm-100 tw-tracking-[-0.04em] mb-4 pb-2">Community
+                                Spotlight!</p>
+
+                            <p className="montserrat text-center text-shadow-3 font-weight-800 font-size-200 font-size-sm-210 font-size-md-200 font-size-lg-190 font-size-xl-210 font-size-xxl-260 text-start text-white line-height-120 line-height-sm-100 tw-tracking-[-0.04em] mb-3">Meme
+                                contest winners</p>
+                            <p className="montserrat text-center line-height-130 font-size-md-90 font-size-xl-100 text-white mb-0">Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore</p>
+                        </div>
+                        <div className="d-none d-md-block">
+                            <img src={stonefishaiRight}
+                                 className="md:tw-w-[100px] lg:tw-w-[180px] xl:tw-w-[220px] xxl:tw-w-[220px]" alt=""/>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-md-6 col-lg-3 px-lg-2 px-xl-3">
+                            <div
+                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
+                                <div className="p-2 tw-h-[320px]">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-6 col-lg-3 px-lg-2 px-xl-3">
+                            <div
+                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
+                                <div className="p-2 tw-h-[320px]">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-6 col-lg-3 px-lg-2 px-xl-3">
+                            <div
+                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
+                                <div className="p-2 tw-h-[320px]">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-6 col-lg-3 px-lg-2 px-xl-3">
+                            <div
+                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
+                                <div className="p-2 tw-h-[320px]">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src={wave2} className="w-100" alt=""/>
+
+            {/* Tokenomics */}
+            <div className="bg-color-3 py-5 position-relative" id="tokenomics">
+                <div className="container pb-5">
+                    <p className="friem-regular text-shadow-1 text-center font-size-300 font-size-sm-290 font-size-md-280 font-size-lg-260 font-size-xl-280 font-size-xxl-340 text-start text-white line-height-120 line-height-md-100 tw-tracking-[-0.04em] mb-5">its about the tokenomics</p>
+
+                    <div className="row justify-content-center align-items-center">
+                        <div className="col-10 col-sm-7 col-md-5 col-lg-6 mb-5 mb-lg-0">
+                            <div className="pe-lg-5">
+                                <div className="mb-4">
+                                    <img src={candle} className="w-100" alt="Candle"/>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <div className="d-none d-sm-block">
+                                        <a href="https://dexscreener.com/sui/0x7c7ffaedb6d8a31618565f74638a9017b24cd74e1affb5ceca2640e02972c8ce" target="_blank" rel="noreferrer"
+                                            className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] xl:tw-w-[136px] text-color-2">Chart
+                                        </a>
+                                    </div>
+                                    <div className="d-none d-sm-block ps-2 pe-2">
+                                        <a href="https://app.turbos.finance/#/trade?input=0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI&output=0x2::sui::SUI" target="_blank" rel="noreferrer"
+                                            className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] text-white bg-color-3">Buy
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6">
+                            <div
+                                className="bg-color-4 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] px-4 py-3">
+                                <p className="montserrat font-weight-700 font-size-150 font-size-md-160 font-size-xl-170 font-size-xxl-180 text-center mb-0">Token
+                                    Supply:<br/> 10,000,000,000 $SAI</p>
+                            </div>
+
+                            <div
+                                className="bg-white tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] box-shadow-1 px-4 py-5 p-lg-5">
+                                <div className="mb-5">
+                                    <div className="d-flex justify-content-center mb-4">
+                                    <div className="bg-color-2 tw-w-[120px] tw-h-[120px] tw-rounded-[50%]"></div>
+                                    </div>
+
+                                    <p className="montserrat text-black text-center font-size-lg-110 font-size-xl-130 font-weight-700 mb-1">95%
+                                        Community (Fair Launch)</p>
+                                    <p className="montserrat text-black text-center font-size-90 font-size-lg-100 line-height-150 mb-0">Amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi.</p>
+                                </div>
+
+                                <div className="">
+                                    <div className="d-flex justify-content-center mb-4">
+                                        <div className="bg-color-2 tw-w-[120px] tw-h-[120px] tw-rounded-[50%]"></div>
+                                    </div>
+
+                                    <p className="montserrat text-black text-center font-size-lg-110 font-size-xl-130 font-weight-700 mb-1">95%
+                                        Community (Fair Launch)</p>
+                                    <p className="montserrat text-black text-center font-size-90 font-size-lg-100 line-height-150 mb-0">Amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Footer */}
+            <div className="bg-color-5 py-5">
+                <div className="container">
+                    <div className="d-flex flex-wrap justify-content-center align-items-center mb-2">
+                        <div className="px-2 px-sm-3 mb-3">
+                            <a href="#tokenomics" className="text-decoration-none">
+                                <p className="friem-regular font-size-100 text-center text-white mb-0">Tokenomics</p>
+                            </a>
+                        </div>
+                        <div className="px-2 px-sm-3 mb-3">
+                            <a href="https://t.me/stonefishAI" className="text-decoration-none">
+                                <p className="friem-regular font-size-100 text-center text-white mb-0">Community</p>
+                            </a>
+                        </div>
+                        <div className="px-2 px-sm-3 mb-3">
+                            <a href="#meme-library" className="text-decoration-none">
+                                <p className="friem-regular font-size-100 text-center text-white mb-0">Meme&nbsp;Library</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p className="friem-regular text-shadow-1 font-size-360 font-size-sm-360 font-size-md-450 font-size-xl-520 font-size-xxl-550 text-center text-white line-height-120 line-height-sm-100 tw-tracking-[-0.04em] mb-4">trade
+                        $saI on sui!</p>
+
+                    <div className="d-flex justify-content-center mb-5">
+                        <div className="px-1">
+                            <img src={social1} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                        </div>
+                        <div className="px-1">
+                            <img src={social2} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                        </div>
+                        <div className="px-1">
+                            <img src={social3} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                        </div>
+                        <div className="px-1">
+                            <img src={social4} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                        </div>
+                        <div className="px-1">
+                            <img src={social5} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                        </div>
+                        <div className="px-1">
+                            <a href="https://www.coingecko.com/en/coins/stonefish-ai" target="_blank" rel="noreferrer">
+                                <img src={social6} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p className="friem-regular font-size-100 font-size-sm-120 font-size-md-120 font-size-xl-130 font-size-xxl-130 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-0">$SAI © 2024. ALL RIGHTS RESERVED</p>
                 </div>
             </div>
         </div>
