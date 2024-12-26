@@ -1,11 +1,11 @@
 // images
 import bg1 from '../../img/bg-1.webp';
 import logo from '../../img/logo.png';
-import social1 from '../../img/socials/social-1.webp';
-import social2 from '../../img/socials/social-2.webp';
-import social3 from '../../img/socials/social-3.webp';
-import social4 from '../../img/socials/social-4.webp';
-import social5 from '../../img/socials/social-5.webp';
+import social7 from '../../img/socials/social-7.webp';
+import social8 from '../../img/socials/social-8.webp';
+import social9 from '../../img/socials/social-9.webp';
+import social4 from '../../img/socials/social-3.webp';
+import social5 from '../../img/socials/social-1.webp';
 import social6 from '../../img/socials/social-6.webp';
 import stonefishai2 from '../../img/stonefishai-2.gif';
 import burn from '../../img/burn.webp';
@@ -14,6 +14,13 @@ import wave2 from '../../img/wave2.webp';
 import candle from '../../img/candle.webp';
 import stonefishaiLeft from '../../img/stonefishai-left.webp';
 import stonefishaiRight from '../../img/stonefishai-right.webp';
+import meme1 from '../../img/memes/meme-1.webp';
+import meme2 from '../../img/memes/meme-2.webp';
+import meme3 from '../../img/memes/meme-3.webp';
+import video1 from '../../img/memes/video-1.webm';
+import video2 from '../../img/memes/video-2.mp4';
+import video3 from '../../img/memes/video-3.mp4';
+import fairlaunch from '../../img/fairlaunch.png';
 
 import telegram from '../../img/telegram.png';
 import twitter from '../../img/twitter.png';
@@ -104,10 +111,16 @@ function Home(props) {
                             <h2 className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-5">Venomous
                                 Ai Agent on SUI Network</h2>
 
+                            <div className="text-center mb-4">
+                                <a href="https://t.me/stonefishAI" target="_blank" rel="noreferrer"
+                                   className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 pt-[1px] pb-[1px] px-5">Join
+                                    $SAI Community
+                                </a>
+                            </div>
+
                             <div className="text-center">
                                 <a href="https://t.me/stonefishAI" target="_blank" rel="noreferrer"
-                                    className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 pt-[1px] pb-[1px] px-5">Join
-                                    $SAI Community
+                                   className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 pt-[1px] pb-[1px] bg-color-3 text-white px-5 tw-w-[311.95px] md:tw-w-[347.13px] xl:tw-w-[382.33px] xxl:tw-w-[382.33px]">SNIPE $SAI HERE
                                 </a>
                             </div>
                         </div>
@@ -139,19 +152,34 @@ function Home(props) {
 
                             <div className="d-flex ps-3">
                                 <div className="px-1">
-                                    <img src={social1} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    <a href="https://x.com/stonefishai" target="_blank"
+                                       rel="noreferrer">
+                                        <img src={social7} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    </a>
                                 </div>
                                 <div className="px-1">
-                                    <img src={social2} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    <a href="https://t.me/stonefishAI" target="_blank"
+                                       rel="noreferrer">
+                                        <img src={social8} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    </a>
                                 </div>
                                 <div className="px-1">
-                                    <img src={social3} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    <a href="https://suiscan.xyz/mainnet/coin/0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI/txs" target="_blank"
+                                       rel="noreferrer">
+                                        <img src={social9} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    </a>
                                 </div>
                                 <div className="px-1">
-                                    <img src={social4} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    <a href="https://dexscreener.com/sui/0x7c7ffaedb6d8a31618565f74638a9017b24cd74e1affb5ceca2640e02972c8ce" target="_blank"
+                                       rel="noreferrer">
+                                        <img src={social4} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    </a>
                                 </div>
                                 <div className="px-1">
-                                    <img src={social5} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    <a href="https://app.turbos.finance/#/trade?input=0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI&output=0x2::sui::SUI" target="_blank"
+                                       rel="noreferrer">
+                                        <img src={social5} className="tw-w-[40px] lg:tw-w-[50px]" alt=""/>
+                                    </a>
                                 </div>
                                 <div className="px-1">
                                     <a href="https://www.coingecko.com/en/coins/stonefish-ai" target="_blank" rel="noreferrer">
@@ -204,28 +232,23 @@ function Home(props) {
                             <div
                                 className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
                                 <div className="p-2">
-                                    <p className="montserrat text-black font-size-lg-110 font-size-xl-130 font-weight-700">$SAI
-                                        Burned to
-                                        Ashes - *insert date*</p>
-                                    <p className="montserrat text-black font-size-90 font-size-lg-100 line-height-150 mb-0">Nemo
-                                        enim
-                                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                                        porro quisquam est, qui dolorem. **Add tx link and milestone</p>
+                                    <p className="montserrat text-black font-size-lg-110 font-size-xl-130 font-weight-700">50M $SAI Burned to Ashes - 13 DEC 2024</p>
+                                    <p className="montserrat text-black font-size-lg-110 font-size-xl-130 font-weight-700">500K mc milestone</p>
+
+                                    <a href="https://suivision.xyz/txblock/4JQ1MVWXCpR7ZJx73ZaQ63Dg7JYfv63xjk2PDgeMUhv8" target="_blank" rel="noreferrer" className="montserrat text-black font-size-90 font-weight-600 font-size-lg-100 line-height-150 mb-0" style={{wordBreak: "break-word"}}>https://suivision.xyz/txblock/4JQ1MVWXCpR7ZJx73ZaQ63Dg7JYfv63xjk2PDgeMUhv8</a>
                                 </div>
                             </div>
 
                             <div
                                 className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4">
                                 <div className="p-2">
-                                    <p className="montserrat text-black font-size-110 font-size-xl-130 font-weight-700">$SAI
-                                        Burned to
-                                        Ashes - *insert date*</p>
-                                    <p className="montserrat text-black font-size-90 font-size-lg-100 line-height-150 mb-0">Nemo
-                                        enim
-                                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                                        porro quisquam est, qui dolorem. **Add tx link and milestone</p>
+                                    <p className="montserrat text-black font-size-lg-110 font-size-xl-130 font-weight-700">50M $SAI Burned to Ashes - 16 DEC 2024</p>
+                                    <p className="montserrat text-black font-size-lg-110 font-size-xl-130 font-weight-700">1M mc milestone</p>
+
+                                    <a href="https://suivision.xyz/txblock/4JQ1MVWXCpR7ZJx73ZaQ63Dg7JYfv63xjk2PDgeMUhv8"
+                                       target="_blank" rel="noreferrer"
+                                       className="montserrat text-black font-size-90 font-weight-600 font-size-lg-100 line-height-150 mb-0"
+                                       style={{wordBreak: "break-word"}}>https://suivision.xyz/txblock/FJ4nkWQHbDb8xpLsFcRhnuXC2rgRZqUaPXEcXpYFD4Wb</a>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +276,7 @@ function Home(props) {
                     className="bg-color-5 position-absolute tw-bottom-[-10px] tw-left-[0] w-100 tw-h-[50px] tw-z-[-1]"></div>
 
                 <div className="container">
-                    <div className="d-flex justify-content-between align-items-center mb-5 pb-md-4 pb-lg-5">
+                    <div className="d-flex justify-content-between align-items-center mb-5 pb-md-4 pb-lg-4">
                         <div className="d-none d-md-block">
                             <img src={stonefishaiLeft}
                                  className="md:tw-w-[100px] lg:tw-w-[180px] xl:tw-w-[220px] xxl:tw-w-[220px]" alt=""/>
@@ -264,10 +287,6 @@ function Home(props) {
 
                             <p className="montserrat text-center text-shadow-3 font-weight-800 font-size-200 font-size-sm-210 font-size-md-200 font-size-lg-190 font-size-xl-210 font-size-xxl-260 text-start text-white line-height-120 line-height-sm-100 tw-tracking-[-0.04em] mb-3">Meme
                                 contest winners</p>
-                            <p className="montserrat text-center line-height-130 font-size-md-90 font-size-xl-100 text-white mb-0">Lorem
-                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</p>
                         </div>
                         <div className="d-none d-md-block">
                             <img src={stonefishaiRight}
@@ -275,41 +294,117 @@ function Home(props) {
                         </div>
                     </div>
 
+                    <p className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-5">Meme
+                        Photos</p>
+
+                    <div className="row mb-5">
+                        <div className="col-md-4 px-lg-2 px-xl-3">
+                            <div className="font-size-90">
+                                <p className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-3">Top
+                                    1</p>
+                            </div>
+                            
+                            <a href="https://x.com/ningtya39149/status/1869005427251593258" target="_blank"
+                               rel="noreferrer">
+                                <div
+                                    className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-2 p-lg-3 tw-mb-[30px]">
+                                    <img src={meme1} className="w-100 tw-rounded-[20px]" alt="Meme"/>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div className="col-md-4 px-lg-2 px-xl-3">
+                            <div className="font-size-90">
+                                <p className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-3">Top
+                                    2</p>
+                            </div>
+
+                            <a href="https://x.com/Crypt_amos/status/1868544191023993265" target="_blank"
+                               rel="noreferrer">
+                                <div
+                                    className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-2 p-lg-3 tw-mb-[30px]">
+                                    <img src={meme2} className="w-100 tw-rounded-[20px]" alt="Meme"/>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div className="col-md-4 px-lg-2 px-xl-3">
+                            <div className="font-size-90">
+                                <p className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-3">Top
+                                    3</p>
+                            </div>
+
+                            <a href="https://x.com/AbuSulaimon456/status/1869974591143084221" target="_blank"
+                               rel="noreferrer">
+                                <div
+                                    className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-2 p-lg-3 tw-mb-[30px]">
+                                    <img src={meme3} className="w-100 tw-rounded-[20px]" alt="Meme"/>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-5">Meme
+                        Videos</p>
+
                     <div className="row">
-                        <div className="col-md-6 col-lg-3 px-lg-2 px-xl-3">
-                            <div
-                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
-                                <div className="p-2 tw-h-[320px]">
-
-                                </div>
+                        <div className="col-md-4 px-lg-2 px-xl-3">
+                            <div className="font-size-90">
+                                <p className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-3">Top 1</p>
                             </div>
+
+                            <a href="https://x.com/Rt1Mind/status/1870059933758087622" target="_blank"
+                               rel="noreferrer">
+                                <div
+                                    className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-2 p-lg-3 tw-mb-[30px]">
+                                    <div className="ratio ratio-4x3">
+                                        <video autoPlay muted loop controls className="tw-rounded-[20px]">
+                                            <source src={video1} type="video/mp4"/>
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
-                        <div className="col-md-6 col-lg-3 px-lg-2 px-xl-3">
-                            <div
-                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
-                                <div className="p-2 tw-h-[320px]">
-
-                                </div>
+                        <div className="col-md-4 px-lg-2 px-xl-3">
+                            <div className="font-size-90">
+                                <p className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-3">Top
+                                2</p>
                             </div>
+
+                            <a href="https://x.com/pinguin_farm/status/1870067541760192819" target="_blank"
+                               rel="noreferrer">
+                                <div
+                                    className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-2 p-lg-3 tw-mb-[30px]">
+                                    <div className="ratio ratio-4x3">
+                                        <video autoPlay muted loop controls className="tw-rounded-[20px]">
+                                            <source src={video2} type="video/mp4"/>
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
-                        <div className="col-md-6 col-lg-3 px-lg-2 px-xl-3">
-                            <div
-                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
-                                <div className="p-2 tw-h-[320px]">
-
-                                </div>
+                        <div className="col-md-4 px-lg-2 px-xl-3">
+                            <div className="font-size-90">
+                                <p className="friem-regular text-shadow-2 font-size-170 font-size-sm-180 font-size-md-180 font-size-xl-200 font-size-xxl-220 text-center text-white line-height-100 tw-tracking-[-0.01em] mb-3">Top
+                                3</p>
                             </div>
-                        </div>
 
-                        <div className="col-md-6 col-lg-3 px-lg-2 px-xl-3">
-                            <div
-                                className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-4 tw-mb-[30px]">
-                                <div className="p-2 tw-h-[320px]">
-
+                            <a href="https://x.com/masterzionn/status/1870074207419412761" target="_blank"
+                               rel="noreferrer">
+                                <div
+                                    className="bg-color-4 box-shadow-1 tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] p-2 p-lg-3 tw-mb-[30px]">
+                                    <div className="ratio ratio-4x3">
+                                        <video autoPlay muted loop controls className="tw-rounded-[20px]">
+                                            <source src={video3} type="video/mp4"/>
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -320,7 +415,8 @@ function Home(props) {
             {/* Tokenomics */}
             <div className="bg-color-3 py-5 position-relative" id="tokenomics">
                 <div className="container pb-5">
-                    <p className="friem-regular text-shadow-1 text-center font-size-300 font-size-sm-290 font-size-md-280 font-size-lg-260 font-size-xl-280 font-size-xxl-340 text-start text-white line-height-120 line-height-md-100 tw-tracking-[-0.04em] mb-5">its about the tokenomics</p>
+                    <p className="friem-regular text-shadow-1 text-center font-size-300 font-size-sm-290 font-size-md-280 font-size-lg-260 font-size-xl-280 font-size-xxl-340 text-start text-white line-height-120 line-height-md-100 tw-tracking-[-0.04em] mb-5">its
+                        about the tokenomics</p>
 
                     <div className="row justify-content-center align-items-center">
                         <div className="col-10 col-sm-7 col-md-5 col-lg-6 mb-5 mb-lg-0">
@@ -331,12 +427,14 @@ function Home(props) {
 
                                 <div className="d-flex justify-content-center align-items-center">
                                     <div className="d-none d-sm-block">
-                                        <a href="https://dexscreener.com/sui/0x7c7ffaedb6d8a31618565f74638a9017b24cd74e1affb5ceca2640e02972c8ce" target="_blank" rel="noreferrer"
-                                            className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] xl:tw-w-[136px] text-color-2">Chart
+                                        <a href="https://dexscreener.com/sui/0x7c7ffaedb6d8a31618565f74638a9017b24cd74e1affb5ceca2640e02972c8ce"
+                                           target="_blank" rel="noreferrer"
+                                           className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] xl:tw-w-[136px] text-color-2">Chart
                                         </a>
                                     </div>
                                     <div className="d-none d-sm-block ps-2 pe-2">
-                                        <a href="https://app.turbos.finance/#/trade?input=0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI&output=0x2::sui::SUI" target="_blank" rel="noreferrer"
+                                        <a href="https://app.turbos.finance/#/trade?input=0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI&output=0x2::sui::SUI"
+                                           target="_blank" rel="noreferrer"
                                             className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] text-white bg-color-3">Buy
                                         </a>
                                     </div>
@@ -353,30 +451,20 @@ function Home(props) {
 
                             <div
                                 className="bg-white tw-border-[#000000] tw-border-solid tw-border-[4px] tw-rounded-[20px] box-shadow-1 px-4 py-5 p-lg-5">
-                                <div className="mb-5">
+                                <div className="my-5">
                                     <div className="d-flex justify-content-center mb-4">
-                                    <div className="bg-color-2 tw-w-[120px] tw-h-[120px] tw-rounded-[50%]"></div>
+                                        <div className="">
+                                            <img src={fairlaunch} className="tw-w-[130px]" alt="Fair Launch"></img>
+                                        </div>
                                     </div>
 
-                                    <p className="montserrat text-black text-center font-size-lg-110 font-size-xl-130 font-weight-700 mb-1">95%
-                                        Community (Fair Launch)</p>
-                                    <p className="montserrat text-black text-center font-size-90 font-size-lg-100 line-height-150 mb-0">Amet,
-                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi.</p>
-                                </div>
+                                    <p className="montserrat text-black text-center font-size-lg-110 font-size-xl-130 font-weight-700 mb-3">100% Community (Fair Launch)</p>
 
-                                <div className="">
-                                    <div className="d-flex justify-content-center mb-4">
-                                        <div className="bg-color-2 tw-w-[120px] tw-h-[120px] tw-rounded-[50%]"></div>
-                                    </div>
-
-                                    <p className="montserrat text-black text-center font-size-lg-110 font-size-xl-130 font-weight-700 mb-1">95%
-                                        Community (Fair Launch)</p>
-                                    <p className="montserrat text-black text-center font-size-90 font-size-lg-100 line-height-150 mb-0">Amet,
-                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi.</p>
+                                    <ul className="d-flex flex-column align-items-center">
+                                        <li className="montserrat text-black text-center font-size-90 font-size-lg-100 line-height-150 mb-0">Stealth launch on <a href="https://turbos.fun" className="text-black font-weight-600" target="_blank" rel="noreferrer">turbos.fun</a></li>
+                                        <li className="montserrat text-black text-center font-size-90 font-size-lg-100 line-height-150 mb-0">Bonded in less than 2 hours</li>
+                                        <li className="montserrat text-black text-center font-size-90 font-size-lg-100 line-height-150 mb-0">0% team token</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -410,23 +498,43 @@ function Home(props) {
 
                     <div className="d-flex justify-content-center mb-5">
                         <div className="px-1">
-                            <img src={social1} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            <a href="https://x.com/stonefishai"
+                               target="_blank"
+                               rel="noreferrer">
+                                <img src={social7} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            </a>
                         </div>
                         <div className="px-1">
-                            <img src={social2} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            <a href="https://t.me/stonefishAI"
+                               target="_blank"
+                               rel="noreferrer">
+                                <img src={social8} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            </a>
                         </div>
                         <div className="px-1">
-                            <img src={social3} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            <a href="https://suiscan.xyz/mainnet/coin/0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI/txs"
+                               target="_blank"
+                               rel="noreferrer">
+                                <img src={social9} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            </a>
                         </div>
                         <div className="px-1">
-                            <img src={social4} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            <a href="https://dexscreener.com/sui/0x7c7ffaedb6d8a31618565f74638a9017b24cd74e1affb5ceca2640e02972c8ce"
+                               target="_blank"
+                               rel="noreferrer">
+                                <img src={social4} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            </a>
                         </div>
                         <div className="px-1">
-                            <img src={social5} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            <a href="https://app.turbos.finance/#/trade?input=0x5b40e84bd4b428fb7ae15a4a36ed1527d1b7bfaeae21855a499714175d215c2e::sai::SAI&output=0x2::sui::SUI"
+                               target="_blank"
+                               rel="noreferrer">
+                                <img src={social5} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            </a>
                         </div>
                         <div className="px-1">
                             <a href="https://www.coingecko.com/en/coins/stonefish-ai" target="_blank" rel="noreferrer">
-                                <img src={social6} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
+                            <img src={social6} className="tw-w-[40px] sm:tw-w-[60px] lg:tw-w-[70px]" alt=""/>
                             </a>
                         </div>
                     </div>
