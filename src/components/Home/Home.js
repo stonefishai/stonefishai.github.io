@@ -8,10 +8,11 @@ import social4 from '../../img/socials/social-3.webp';
 import social5 from '../../img/socials/social-1.webp';
 import social6 from '../../img/socials/social-6.webp';
 import stonefishai2 from '../../img/stonefishai-2.gif';
-import burn from '../../img/burn.webp';
+import burn from '../../img/burn.gif';
 import wave from '../../img/wave.webp';
 import wave2 from '../../img/wave2.webp';
-import candle from '../../img/candle.webp';
+import candle from '../../img/candle.gif';
+import clouds from '../../img/clouds.webp';
 import stonefishaiLeft from '../../img/stonefishai-left.webp';
 import stonefishaiRight from '../../img/stonefishai-right.webp';
 import meme1 from '../../img/memes/meme-1.webp';
@@ -54,12 +55,12 @@ function Home(props) {
                                         </a>
                                     </div>
                                     <div className="d-none d-lg-block ps-3 ps-xl-4">
-                                        <a href="https://t.me/stonefishAI" target="_blank" rel="noreferrer" className="text-decoration-none">
+                                        <a href="#community-spotlight" className="text-decoration-none">
                                             <p className="friem-regular font-size-100 text-center text-black mb-0">Community</p>
                                         </a>
                                     </div>
                                     <div className="d-none d-lg-block ps-3 ps-xl-4">
-                                        <a href="#meme-library" className="text-decoration-none">
+                                        <a href="https://drive.google.com/drive/folders/1609UU05hU27Q_SMkLfTbmKYnysRrbuaP?usp=sharing" target="_blank" rel="noreferrer" className="text-decoration-none">
                                             <p className="friem-regular font-size-100 text-center text-black mb-0">Meme
                                                 Library</p>
                                         </a>
@@ -85,7 +86,7 @@ function Home(props) {
                                             <ul className="dropdown-menu bg-color-2 tw-border-[2px] tw-border-[#000000] tw-border-solid tw-rounded-[10px]">
                                                 <li><a href="#tokenomics" className="text-decoration-none friem-regular dropdown-item">Tokenomics</a></li>
                                                 <li><a href="https://t.me/stonefishAI" className="friem-regular dropdown-item" target="_blank" rel="noreferrer">Community</a></li>
-                                                <li><a href="#meme-library" className="friem-regular dropdown-item">Meme Library</a></li>
+                                                <li><a href="https://drive.google.com/drive/folders/1609UU05hU27Q_SMkLfTbmKYnysRrbuaP?usp=sharing" target="_blank" rel="noreferrer" className="friem-regular dropdown-item">Meme Library</a></li>
                                                 <li className="d-block d-sm-none px-3 mt-2 mb-2">
                                                     <a href="https://dexscreener.com/sui/0x7c7ffaedb6d8a31618565f74638a9017b24cd74e1affb5ceca2640e02972c8ce" target="_blank" rel="noreferrer"
                                                         className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 py-0 px-4 tw-w-[115px] md:tw-w-[126px] xl:tw-w-[136px] text-color-2">Chart
@@ -119,7 +120,7 @@ function Home(props) {
                             </div>
 
                             <div className="text-center">
-                                <a href="https://t.me/stonefishAI" target="_blank" rel="noreferrer"
+                                <a href="https://raidenx.io/@StonefishSAI" target="_blank" rel="noreferrer"
                                    className="btn btn-custom-3 friem-regular font-size-120 font-size-md-140 font-size-xl-160 pt-[1px] pb-[1px] bg-color-3 text-white px-5 tw-w-[311.95px] md:tw-w-[347.13px] xl:tw-w-[382.33px] xxl:tw-w-[382.33px]">SNIPE $SAI HERE
                                 </a>
                             </div>
@@ -271,7 +272,7 @@ function Home(props) {
 
             {/* Community Spotlight */}
             <div
-                className="bg-color-5 py-5 position-relative tw-mt-[-10px] sm:tw-mt-[-20px] md:tw-mt-[-50px] md:tw-mb-[-50px]" id="meme-library">
+                className="bg-color-5 py-5 position-relative tw-mt-[-10px] sm:tw-mt-[-20px] md:tw-mt-[-50px] md:tw-mb-[-50px]" id="community-spotlight">
                 <div
                     className="bg-color-5 position-absolute tw-bottom-[-10px] tw-left-[0] w-100 tw-h-[50px] tw-z-[-1]"></div>
 
@@ -421,8 +422,14 @@ function Home(props) {
                     <div className="row justify-content-center align-items-center">
                         <div className="col-10 col-sm-7 col-md-5 col-lg-6 mb-5 mb-lg-0">
                             <div className="pe-lg-5">
-                                <div className="mb-4">
-                                    <img src={candle} className="w-100" alt="Candle"/>
+                                <div className="mb-4 position-relative">
+                                    <div className="position-absolute w-100 tw-z-[2] tw-top-[0] tw-left-[0]">
+                                        <img src={clouds} className="w-100" alt="Candle"/>
+                                    </div>
+
+                                    <div className="position-relative tw-z-[1]">
+                                        <img src={candle} className="w-100" alt="Candle"/>
+                                    </div>
                                 </div>
 
                                 <div className="d-flex justify-content-center align-items-center">
@@ -482,12 +489,12 @@ function Home(props) {
                             </a>
                         </div>
                         <div className="px-2 px-sm-3 mb-3">
-                            <a href="https://t.me/stonefishAI" className="text-decoration-none">
+                            <a href="#community-spotlight" className="text-decoration-none">
                                 <p className="friem-regular font-size-100 text-center text-white mb-0">Community</p>
                             </a>
                         </div>
                         <div className="px-2 px-sm-3 mb-3">
-                            <a href="#meme-library" className="text-decoration-none">
+                            <a href="https://drive.google.com/drive/folders/1609UU05hU27Q_SMkLfTbmKYnysRrbuaP?usp=sharing" target="_blank" rel="noreferrer" className="text-decoration-none">
                                 <p className="friem-regular font-size-100 text-center text-white mb-0">Meme&nbsp;Library</p>
                             </a>
                         </div>
